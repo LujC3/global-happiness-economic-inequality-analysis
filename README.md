@@ -15,7 +15,7 @@ GDP growth is the headline measure most governments, including the Philippines, 
 
 Merged on country name + year, giving **39 countries across 2015–2023** (338 country-year observations) after fixing three country-name mismatches (Turkey→Türkiye, UK→United Kingdom, USA→United States).
 
-## ⚠️ Data quality finding (important — read before trusting any conclusion here)
+## Data quality finding (important — read before trusting any conclusion here)
 
 While auditing the poverty/inequality dataset before merging, I found that it contains **multiple, randomly-varying rows for the same country and year** — between 5 and 79 separate rows per country-year, with no second key (province, survey wave, source) to explain the spread. For example, Bangladesh in 2017 has 40 rows where GDP per capita alone ranges from $2,555 to $3,134 and the poverty rate ranges from 9.6% to 37.4%. Real official statistics (World Bank, national statistical agencies) don't take this shape.
 
@@ -48,10 +48,6 @@ This is consistent with the dataset being **synthetic/simulated rather than sour
 ## Tech stack
 
 Python · pandas · NumPy · statsmodels · scipy · matplotlib · seaborn
-
-## Background note
-
-My professional background is in law, nursing, and local government procurement, not statistics — but cross-country wellbeing analysis like this is exactly the kind of evidence base Philippine policymakers need when weighing growth-focused programs against welfare-focused ones. Flagging a synthetic dataset before drawing conclusions from it is the same instinct that makes a good case auditor: the source has to hold up before the argument built on it does.
 
 ---
 *Part of a [data analytics portfolio](https://lujc3.github.io) combining a legal, nursing, and public-sector background with applied data analysis.*
