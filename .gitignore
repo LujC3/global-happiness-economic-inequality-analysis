@@ -1,0 +1,11 @@
+# Raw data stays local — not committed to the repo
+data/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/
